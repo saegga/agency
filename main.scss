@@ -1,0 +1,335 @@
+
+$fontMonserat: 'Montseratt';
+$themeColor: #130e27;
+$whiteColor: #fff;
+$borderRadius: 10px;
+$shadowColor: #6b6b6b;
+$inputBackground: #eeeeee;
+$colorAcceptBtn: #c62314 ;
+$colorGray: #efefef;
+
+
+@mixin inputOption{
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+	height: 56px;
+	border: none;
+	outline: none;
+	border-radius: $borderRadius;
+}
+
+ul, p {
+	margin: 0;
+	padding: 0;
+}
+li{
+		display: inline;
+		list-style-type: none;
+}
+header{
+	background: url("img/header.jpg");
+	background-size: cover;
+	height: 687px;
+}
+.top_menu{
+	padding-top: 36px;
+	.logotype img{
+		width: 100%;
+	}
+}
+.top_right-menu{
+
+	margin: auto;
+	text-align: right;
+	a{
+		position: relative;
+		color: $whiteColor;
+		text-decoration: none;
+		text-transform: uppercase;
+		font: 18px $fontMonserat;
+		padding: 12px 15px 12px 15px;
+		
+		@media (min-width: 576px) and (max-width: 991px){
+				font: 16px "Montseratt";
+    			padding: 9px 12px 9px 12px;
+			}
+		
+	}
+.active{
+		height: 37px;
+		width: 85px;
+		background: $themeColor;
+		border-radius: $borderRadius;
+		opacity: 100;
+	}
+
+}
+.main_info{
+	padding-top: 145px;
+		
+	&-head{
+		font: bold 90px $fontMonserat;
+		color: $themeColor;
+		text-transform: uppercase;
+	}
+	&-subhead{
+		font: bold 90px $fontMonserat;
+		color: $whiteColor;
+	}
+	&-text{
+		padding-top: 40px;
+		color: $whiteColor;
+			@media (min-width: 0px) and (max-width: 1199px){
+				padding-top: 0;
+			}
+	}
+
+	.callback_form{
+		width: 400px;
+		background: $whiteColor;
+		border-radius: $borderRadius;
+		box-shadow: 0px 0px 16px 0px $shadowColor;
+
+		.form_title{
+			padding-top: 30px;
+			padding-bottom: 35px;
+			text-align: center;
+			font: 22px $fontMonserat;
+		}
+		form{
+			padding-bottom: 24px;
+			& input[type="text"]{
+				@include inputOption;
+				background: $inputBackground;
+				padding: 19px;
+				margin-bottom: 16px;
+			}
+			& input[type="checkbox"]{
+				margin-left: 20px;
+				border-radius: $borderRadius;
+				// background: $inputBackground;
+				width: 19px;
+				height: 19px;
+				vertical-align: text-bottom;
+			}
+			& span{
+				font: 500 20px $fontMonserat;
+			}
+			& button{
+				@include inputOption;
+				background: $colorAcceptBtn;
+				color: $whiteColor;
+				font: 22px $fontMonserat;
+				cursor: pointer;
+				margin-top: 20px;
+			}
+		}
+	}
+
+}
+main{
+	padding-top: 45px;
+
+	.our_service{
+		padding-bottom: 100px;
+	}
+	p{
+		display: inline;
+		font: 50px $fontMonserat;
+	}
+	.our{
+		color: $colorAcceptBtn;
+	}
+	.service{
+		color: $themeColor;
+	}
+
+	.advantage{
+
+		margin-bottom: 70px;
+		.wrapper{
+			height: 155px;
+		}
+			& >:last-child{
+				text-align: right;
+			}
+			& >:nth-child(2), & >:nth-child(3){
+				text-align: center;
+			}
+			p{
+				display: inline-block;
+				font: 20px $fontMonserat;
+				color: $themeColor;
+				width: 65%;
+			    text-align: center;
+			    padding-top: 45px;
+			}
+	}
+	.story{
+		background: $themeColor;
+		width: 100%;
+		padding: 32px;
+
+		&_text{
+			color: $whiteColor;
+			font: 20px $fontMonserat;
+		}
+		
+		&_btn{
+			width: 270px;
+		}
+		a{
+			@include inputOption;
+			width: 100%;
+			background: $colorAcceptBtn;
+			color: $whiteColor;
+			font: 22px $fontMonserat;
+			cursor: pointer;
+			text-decoration: none;
+			line-height: 56px;
+			text-align: center;
+		}
+	}
+
+	.price{
+		background: $colorGray;
+		@media (min-width: 768px) and (max-width: 991px) { 
+			.container{
+				max-width: 100%;
+			}
+
+		 }
+		&_head{
+			font:600 50px $fontMonserat;
+			text-transform: uppercase;
+			color: $themeColor;
+		}
+		& .row{
+			text-align: center;
+			height: 161px;
+		}
+	}
+	.pricelist{
+		height: 100% !important;
+		&_item:last-child{
+			margin:0;
+		}
+		&_item{
+			background: $whiteColor;
+			margin: 0px 40px 0px 0px;
+				@media (min-width: 768px) {
+					//margin: 0;
+				}
+
+			&-head{
+				display: block;
+				padding-top: 35px;
+				padding-bottom: 42px;
+				font:22px $fontMonserat; 
+			}
+			&-price{
+				display: block;
+				font:600 60px $fontMonserat;
+				color: $colorAcceptBtn;
+				padding-bottom: 35px;
+			}
+			&-list{
+				padding-bottom: 36px;
+				li{
+					display: block;
+					font: 20px $fontMonserat;
+					color: $themeColor;	
+				}
+			}
+			.sign_up{
+				background:$colorAcceptBtn;
+			}
+			&-btn{
+				width: 205px;
+				height: 49px;
+				margin: 0 auto;
+				background: $themeColor;
+				a{
+					display: block;
+					color:  $whiteColor;
+					text-decoration: none;
+					line-height: 49px;
+				}
+
+			}
+
+		}
+	}
+	.gallery{
+		margin-top: 155px;
+		text-align: center;
+		font: 50px $fontMonserat;
+			@media (min-width: 768px) and (max-width: 991px) { 
+				.container{
+					max-width: 100%;
+				}
+
+			 }
+		p{
+			padding-bottom: 65px;
+			display: inline-block;
+		}
+		.recomend{
+			color:  $themeColor;
+			&_item{
+				display: -webkit-inline-box;
+				padding-bottom: 60px;
+				p{ padding: 0; display: block; text-align: left; }
+				&-text{
+					 font-size: 20px;
+				}&-text2{
+					 font-size: 20px;
+					 color: $colorAcceptBtn;
+				}
+				&-name{
+					font-size:20px;
+					font-weight: 600;
+				}
+			}	
+		}
+		&_items{
+			color: $colorAcceptBtn;
+			&-row{
+				display: -webkit-inline-box;
+				padding-bottom: 30px;
+				
+			}
+		}
+	}
+}
+footer{
+	background: $themeColor;
+	height: 182px;
+	.rights{
+		p{
+			font: 20px $fontMonserat;
+			color: $whiteColor;
+			line-height: 182px;
+			@media (min-width: 768px){
+				font: 16px $fontMonserat;
+				line-height: 182px; 
+			}
+		}
+		span{
+			color: $colorAcceptBtn;
+		}
+	}
+	img{
+		padding-top: 55px;
+		display: block;
+		width: 100%;
+
+	}
+}
+@media screen and (max-width: 768px){
+			.main_info{
+				margin-top: 5px;
+				padding-top: 45px !important;		
+			}
+}

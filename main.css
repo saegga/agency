@@ -1,0 +1,254 @@
+ul, p {
+  margin: 0;
+  padding: 0; }
+
+li {
+  display: inline;
+  list-style-type: none; }
+
+header {
+  background: url("img/header.jpg");
+  background-size: cover;
+  height: 687px; }
+
+.top_menu {
+  padding-top: 36px; }
+  .top_menu .logotype img {
+    width: 100%; }
+
+.top_right-menu {
+  margin: auto;
+  text-align: right; }
+  .top_right-menu a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 18px "Montseratt";
+    padding: 12px 15px 12px 15px; }
+    @media (min-width: 576px) and (max-width: 991px) {
+      .top_right-menu a {
+        font: 16px "Montseratt";
+        padding: 9px 12px 9px 12px; } }
+  .top_right-menu .active {
+    height: 37px;
+    width: 85px;
+    background: #130e27;
+    border-radius: 10px;
+    opacity: 100; }
+
+.main_info {
+  padding-top: 145px; }
+  .main_info-head {
+    font: bold 90px "Montseratt";
+    color: #130e27;
+    text-transform: uppercase; }
+  .main_info-subhead {
+    font: bold 90px "Montseratt";
+    color: #fff; }
+  .main_info-text {
+    padding-top: 40px;
+    color: #fff; }
+    @media (min-width: 0px) and (max-width: 1199px) {
+      .main_info-text {
+        padding-top: 0; } }
+  .main_info .callback_form {
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 0px #6b6b6b; }
+    .main_info .callback_form .form_title {
+      padding-top: 30px;
+      padding-bottom: 35px;
+      text-align: center;
+      font: 22px "Montseratt"; }
+    .main_info .callback_form form {
+      padding-bottom: 24px; }
+      .main_info .callback_form form input[type="text"] {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        height: 56px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        background: #eeeeee;
+        padding: 19px;
+        margin-bottom: 16px; }
+      .main_info .callback_form form input[type="checkbox"] {
+        margin-left: 20px;
+        border-radius: 10px;
+        width: 19px;
+        height: 19px;
+        vertical-align: text-bottom; }
+      .main_info .callback_form form span {
+        font: 500 20px "Montseratt"; }
+      .main_info .callback_form form button {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        height: 56px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        background: #c62314;
+        color: #fff;
+        font: 22px "Montseratt";
+        cursor: pointer;
+        margin-top: 20px; }
+
+main {
+  padding-top: 45px; }
+  main .our_service {
+    padding-bottom: 100px; }
+  main p {
+    display: inline;
+    font: 50px "Montseratt"; }
+  main .our {
+    color: #c62314; }
+  main .service {
+    color: #130e27; }
+  main .advantage {
+    margin-bottom: 70px; }
+    main .advantage .wrapper {
+      height: 155px; }
+    main .advantage > :last-child {
+      text-align: right; }
+    main .advantage > :nth-child(2), main .advantage > :nth-child(3) {
+      text-align: center; }
+    main .advantage p {
+      display: inline-block;
+      font: 20px "Montseratt";
+      color: #130e27;
+      width: 65%;
+      text-align: center;
+      padding-top: 45px; }
+  main .story {
+    background: #130e27;
+    width: 100%;
+    padding: 32px; }
+    main .story_text {
+      color: #fff;
+      font: 20px "Montseratt"; }
+    main .story_btn {
+      width: 270px; }
+    main .story a {
+      display: block;
+      margin: 0 auto;
+      width: 90%;
+      height: 56px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      width: 100%;
+      background: #c62314;
+      color: #fff;
+      font: 22px "Montseratt";
+      cursor: pointer;
+      text-decoration: none;
+      line-height: 56px;
+      text-align: center; }
+  main .price {
+    background: #efefef; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      main .price .container {
+        max-width: 100%; } }
+    main .price_head {
+      font: 600 50px "Montseratt";
+      text-transform: uppercase;
+      color: #130e27; }
+    main .price .row {
+      text-align: center;
+      height: 161px; }
+  main .pricelist {
+    height: 100% !important; }
+    main .pricelist_item:last-child {
+      margin: 0; }
+    main .pricelist_item {
+      background: #fff;
+      margin: 0px 40px 0px 0px; }
+      main .pricelist_item-head {
+        display: block;
+        padding-top: 35px;
+        padding-bottom: 42px;
+        font: 22px "Montseratt"; }
+      main .pricelist_item-price {
+        display: block;
+        font: 600 60px "Montseratt";
+        color: #c62314;
+        padding-bottom: 35px; }
+      main .pricelist_item-list {
+        padding-bottom: 36px; }
+        main .pricelist_item-list li {
+          display: block;
+          font: 20px "Montseratt";
+          color: #130e27; }
+      main .pricelist_item .sign_up {
+        background: #c62314; }
+      main .pricelist_item-btn {
+        width: 205px;
+        height: 49px;
+        margin: 0 auto;
+        background: #130e27; }
+        main .pricelist_item-btn a {
+          display: block;
+          color: #fff;
+          text-decoration: none;
+          line-height: 49px; }
+  main .gallery {
+    margin-top: 155px;
+    text-align: center;
+    font: 50px "Montseratt"; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      main .gallery .container {
+        max-width: 100%; } }
+    main .gallery p {
+      padding-bottom: 65px;
+      display: inline-block; }
+    main .gallery .recomend {
+      color: #130e27; }
+      main .gallery .recomend_item {
+        display: -webkit-inline-box;
+        padding-bottom: 60px; }
+        main .gallery .recomend_item p {
+          padding: 0;
+          display: block;
+          text-align: left; }
+        main .gallery .recomend_item-text {
+          font-size: 20px; }
+        main .gallery .recomend_item-text2 {
+          font-size: 20px;
+          color: #c62314; }
+        main .gallery .recomend_item-name {
+          font-size: 20px;
+          font-weight: 600; }
+    main .gallery_items {
+      color: #c62314; }
+      main .gallery_items-row {
+        display: -webkit-inline-box;
+        padding-bottom: 30px; }
+
+footer {
+  background: #130e27;
+  height: 182px; }
+  footer .rights p {
+    font: 20px "Montseratt";
+    color: #fff;
+    line-height: 182px; }
+    @media (min-width: 768px) {
+      footer .rights p {
+        font: 16px "Montseratt";
+        line-height: 182px; } }
+  footer .rights span {
+    color: #c62314; }
+  footer img {
+    padding-top: 55px;
+    display: block;
+    width: 100%; }
+
+@media screen and (max-width: 768px) {
+  .main_info {
+    margin-top: 5px;
+    padding-top: 45px !important; } }
+
+/*# sourceMappingURL=main.css.map */
